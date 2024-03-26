@@ -20,32 +20,32 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # file Ssh Vpn
-onlynetvpn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ssh"
+onlynetvpn="raw.githubusercontent.com/goodman850/msrv-pack/master/ssh"
 # file Sstp
-onlynetvpnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/sstp"
+onlynetvpnn="raw.githubusercontent.com/goodman850/msrv-pack/master/sstp"
 # file Ssr
-onlynetvpnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ssr"
+onlynetvpnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/ssr"
 # file Shadowsocks
-onlynetvpnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/shadowsocks"
+onlynetvpnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/shadowsocks"
 # file Wireguard
-onlynetvpnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/wireguard"
+onlynetvpnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/wireguard"
 # file Xray
-onlynetvpnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/xray"
+onlynetvpnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/xray"
 # file Ipsec
-onlynetvpnnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ipsec"
+onlynetvpnnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/ipsec"
 # file Backup
-onlynetvpnnnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/backup"
+onlynetvpnnnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/backup"
 # file Websocket
-onlynetvpnnnnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/websocket"
+onlynetvpnnnnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/websocket"
 # file Ohp
-onlynetvpnnnnnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ohp"
+onlynetvpnnnnnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/ohp"
 # link Hosting update
-onlynetvpnnnnnnnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/update"
+onlynetvpnnnnnnnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/update"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$(curl -k https://titanic.icu/apiV2/api.php?myip=$MYIP )
-if [ $MYIP == $IZIN ]; then
+if [ $MYIP  ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
@@ -62,10 +62,10 @@ clear
 #wget https://${onlynetvpn}/newhost.sh && chmod +x newhost.sh && ./newhost.sh
 #sleep 1
 #install webpanel
-#wget https://raw.githubusercontent.com/goodman850/titanic-pack1/master/update/webpanel.sh && chmod +x webpanel.sh && screen -S webpanel ./webpanel.sh
+#wget https://raw.githubusercontent.com/goodman850/msrv-pack/master/update/webpanel.sh && chmod +x webpanel.sh && screen -S webpanel ./webpanel.sh
 #
 #install v2ray
-wget https://raw.githubusercontent.com/goodman850/titanic-pack1/master/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/goodman850/msrv-pack/master/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn
 wget https://${onlynetvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 # Websocket
@@ -77,7 +77,7 @@ wget https://${onlynetvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Update Menu
 wget https://${onlynetvpnnnnnnnnnnn}/getupdate.sh && chmod +x getupdate.sh && ./getupdate.sh
 # sslh fix
-wget https://raw.githubusercontent.com/goodman850/titanic-pack1/master/sslh-fix/sslh-fix.sh && chmod +x sslh-fix.sh && ./sslh-fix.sh
+wget https://raw.githubusercontent.com/goodman850/msrv-pack/master/sslh-fix/sslh-fix.sh && chmod +x sslh-fix.sh && ./sslh-fix.sh
 
 #restart service
 restart
@@ -113,9 +113,9 @@ systemctl daemon-reload
 systemctl enable autosett
 wget -O /etc/set.sh "https://${onlynetvpn}/set.sh"
 chmod +x /etc/set.sh
-wget -O /var/www/html/p/log/pyapi.py "https://raw.githubusercontent.com/goodman850/titanic-pack1/master/xray/pyapi.py"
+wget -O /var/www/html/p/log/pyapi.py "https://raw.githubusercontent.com/goodman850/msrv-pack/master/xray/pyapi.py"
 chmod +x /var/www/html/p/log/*
-#wget -O /etc/cron.sh "https://raw.githubusercontent.com/goodman850/titanic-pack1/master/xray/cron.sh"
+#wget -O /etc/cron.sh "https://raw.githubusercontent.com/goodman850/msrv-pack/master/xray/cron.sh"
 #chmod +x /etc/cron.sh && /etc/cron.sh
 
 history -c

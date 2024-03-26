@@ -18,7 +18,7 @@ success="${GREEN}[SUCCESS]${NC}"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/goodman850/titanic-pack1/master/ipvps.txt )
+IZIN=$(curl https://raw.githubusercontent.com/goodman850/msrv-pack/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else

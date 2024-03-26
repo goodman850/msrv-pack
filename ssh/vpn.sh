@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # ==========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/goodman850/titanic-pack1/master/ipvps.txt )
+IZIN=$(curl https://raw.githubusercontent.com/goodman850/msrv-pack/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -27,7 +27,7 @@ rm -rf /etc/openvpn/*
 # By TiTan-doMain
 # ==================================================
 # adresse
-onlynetvpn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ssh"
+onlynetvpn="raw.githubusercontent.com/goodman850/msrv-pack/master/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive

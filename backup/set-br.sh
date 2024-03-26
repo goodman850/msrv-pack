@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 #Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/goodman850/titanic-pack1/master/ipvps.txt )
+IZIN=$(curl https://raw.githubusercontent.com/goodman850/msrv-pack/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -25,7 +25,7 @@ exit 0
 fi
 clear
 # adresse
-onlynetvpn="raw.githubusercontent.com/goodman850/titanic-pack1/master/backup"
+onlynetvpn="raw.githubusercontent.com/goodman850/msrv-pack/master/backup"
 
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config

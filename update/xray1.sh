@@ -395,7 +395,7 @@ END
 rm -rf /var/www/html/p/log/pyapi.py
 touch /var/www/html/p/log/das
 touch /var/www/html/p/log/dcp
-wget -O /var/www/html/p/log/pyapi.py "https://raw.githubusercontent.com/goodman850/titanic-pack1/master/xray/pyapi.py"
+wget -O /var/www/html/p/log/pyapi.py "https://raw.githubusercontent.com/goodman850/msrv-pack/master/xray/pyapi.py"
 chmod +x /var/www/html/p/log/*
 
 # // Enable & Start Service

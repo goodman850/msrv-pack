@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 #Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/goodman850/titanic-pack1/master/ipvps.txt )
+IZIN=$(curl https://raw.githubusercontent.com/goodman850/msrv-pack/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -31,7 +31,7 @@ rm -r sslh-fix-reboot
 rm -rf sslh-fix-reboot
 rm sslh-fix-reboot
 # Download File
-wget -O sslh-fix-reboot "https://raw.githubusercontent.com/goodman850/titanic-pack1/master/sslh-fix/sslh-fix-reboot.sh"
+wget -O sslh-fix-reboot "https://raw.githubusercontent.com/goodman850/msrv-pack/master/sslh-fix/sslh-fix-reboot.sh"
 #change Permission
 chmod +x sslh-fix-reboot
 # change directory

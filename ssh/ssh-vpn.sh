@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # ==========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/goodman850/titanic-pack1/master/ipvps.txt )
+IZIN=$(curl https://raw.githubusercontent.com/goodman850/msrv-pack/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -26,19 +26,19 @@ fi
 clear
 # ==================================================
 # adresse
-onlynetvpn="raw.githubusercontent.com/goodman850/titanic-pack1/master/ssh"
+onlynetvpn="raw.githubusercontent.com/goodman850/msrv-pack/master/ssh"
 
 # file Xray
-onlynetvpnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/xray"
+onlynetvpnn="raw.githubusercontent.com/goodman850/msrv-pack/master/xray"
 
 # file Trojan Go
-onlynetvpnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/trojango"
+onlynetvpnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/trojango"
 
 # file Stunnel5
-onlynetvpnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/stunnel5"
+onlynetvpnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/stunnel5"
 
 #file Websocket
-onlynetvpnnnnn="raw.githubusercontent.com/goodman850/titanic-pack1/master/websocket"
+onlynetvpnnnnn="raw.githubusercontent.com/goodman850/msrv-pack/master/websocket"
 
 # initiaOnlyNeting var
 export DEBIAN_FRONTEND=noninteractive

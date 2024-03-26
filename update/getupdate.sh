@@ -24,7 +24,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
 exit 0
 fi
 clear
-OnlyNetupdate="raw.githubusercontent.com/goodman850/titanic-pack1/master/update"
+OnlyNetupdate="raw.githubusercontent.com/goodman850/msrv-pack/master/update"
 # change direct
 cd /usr/bin
 # remove file
